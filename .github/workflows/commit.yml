@@ -22,7 +22,7 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config user.name "Thellu"
+          git config user.name "lh728"
           git config user.email "65521533+lh728@users.noreply.github.com"
           git add .
           git commit -m "Automated daily commit" || echo "No changes to commit"
