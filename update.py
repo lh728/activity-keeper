@@ -10,9 +10,9 @@ if n == 0:
     print("No commit today")
 else:
     for i in range(n):
-        # 随机修改一个文件，这里用 update.log
+        # 随机修改一个文件，这里用 log.txt
         with open("log.txt", "a") as f:
             f.write(f"Commit {i+1} at run\n")
         # 每次提交
-        subprocess.run(["git", "add", "update.log"])
+        subprocess.run(["git", "add", "log.txt"])
         subprocess.run(["git", "commit", "-m", f"Auto commit {i+1}/{n}"])
